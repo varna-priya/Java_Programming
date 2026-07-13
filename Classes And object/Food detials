@@ -1,0 +1,32 @@
+public class food
+{
+    String foodName;
+    int Quantity;
+    int price;
+    void display()
+    {
+        System.out.println("foodname:" + foodName);
+        System.out.println("Quantity:" + Quantity);
+        System.out.println("Price:" + price);
+    }
+    public static void main(String[] args)
+    {
+        food item1=new food();
+        item1.foodName="Biriyani";
+        item1.Quantity=10;
+        item1.price=100;
+        item1.display();
+        System.out.println("=================================================");
+        food item2=new food();
+        item2.foodName="Dosa";
+        item2.Quantity=2;
+        item2.price=60;
+        item2.display();
+        System.out.println("=================================================");
+        food item3=new food();
+        item3.foodName="Idly";
+        item3.Quantity=2;
+        item3.price=20;
+        item3.display();
+    }
+}
