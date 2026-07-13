@@ -1,0 +1,42 @@
+public class Employee
+{
+    String employeename;
+    int salary;
+    String position;
+
+    public static void main(String[] args)
+    {
+        SoftwareEngineer se1=new SoftwareEngineer();
+        se1.employeename="Varna";
+        se1.salary=5000000;
+        se1.position="Software engineer";
+        se1.Language="JAVA";
+
+        System.out.println("Name: " + se1.employeename);
+        System.out.println("Salary: " + se1.salary);
+        System.out.println("Position: " + se1.position);
+        System.out.println("Language: " + se1.Language);
+
+        System.out.println("==========================");
+
+       
+        FirmwareEngineer se2=new FirmwareEngineer();
+        se2.employeename="Priya";
+        se2.salary=5000000;
+        se2.position="Firmware engineer";
+        se2.Language="C";
+        System.out.println("Name: " + se2.employeename);
+        System.out.println("Salary: " + se2.salary);
+        System.out.println("Position: " + se2.position);
+        System.out.println("Language: " + se2.Language);
+    }
+
+}
+class SoftwareEngineer extends Employee
+{
+    String Language;
+}
+class FirmwareEngineer extends Employee
+{
+    String Language;
+}
