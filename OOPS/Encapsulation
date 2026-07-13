@@ -1,0 +1,59 @@
+class bank
+{
+    private int pin=1234;
+    private int balance=10000;
+    public void checkbalance(int n)
+    {
+        if(n==pin)
+        {
+            System.out.println("balance"+balance);
+        }
+        else
+        {
+            System.out.println("Invalid pin");
+        }
+    }
+    public int deposit(int n,int amt)
+    {
+        if(n==pin)
+        {
+            balance=balance+amt;
+            return balance;
+        }
+        else
+        {
+            System.out.print("Invalid pin");
+            return -1;
+        }
+    }
+    public void withdraw(int n,int amt)
+    {
+    if(n==pin)
+    {
+       if(amt<=balance)
+       {
+            balance=balance-amt;
+            System.out.println("balance:"+balance);
+        }
+        else
+        {
+            System.out.println("Insufficient balance");
+        }
+    }
+    else
+    {
+        System.out.println("Invalid pin");
+    }
+    }
+    public static void main(String[] args)
+    {
+    bank person=new bank();
+    person.checkbalance(1234);
+    person.deposit(1234,5000);
+    person.withdraw(1234,2000);
+    System.out.println("=================================================");
+    person.checkbalance(1234);
+    person.deposit(1234,1000);
+    person.withdraw(1234,15000);
+   }
+}
