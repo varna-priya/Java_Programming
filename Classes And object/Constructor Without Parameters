@@ -1,0 +1,12 @@
+public class Student2 
+{
+    Student2()
+    {
+       System.out.print("Constructor without parameter");
+    }
+    public static void main(String[] args)
+    {
+        Student2 s1=new Student2();
+    }
+    
+}
